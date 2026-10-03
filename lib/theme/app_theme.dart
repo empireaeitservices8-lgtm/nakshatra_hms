@@ -2,62 +2,43 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-  // Core brand palette (Configured for Light Theme matching the cyan/navy Nakshatra logo)
-  static const Color goldPrimary = Color(
-    0xFF00BDD6,
-  ); // Teal/Cyan Accent from Logo
-  static const Color goldLight = Color(0xFF80DEEA); // Light Teal
-  static const Color goldDark = Color(
-    0xFF0D4863,
-  ); // Dark Teal from Logo Gradient
-  static const Color deepBlack = Color(
-    0xFFF8FAFC,
-  ); // Light Slate/Ice Scaffold Background
-  static const Color richBlack = Color(
-    0xFFF1F5F9,
-  ); // Light Slate Section Background
-  static const Color cardBlack = Color(
-    0xFFFFFFFF,
-  ); // Pure White Card Background
-  static const Color surfaceBlack = Color(
-    0xFFF1F5F9,
-  ); // Light Slate Input Surface Background
-  static const Color ivory = Color(
-    0xFF0A1C30,
-  ); // Dark Navy/Slate Text (High Contrast)
-  static const Color ivoryDark = Color(0xFF1E293B); // Slate Gray Heading Text
-  static const Color textSecondary = Color(
-    0xFF475569,
-  ); // Medium Slate Gray Secondary Text
+  // Warm gold palette inspired by the Nakshatra HRMS logo.
+  static const Color goldPrimary = Color(0xFF9A6200);
+  static const Color goldLight = Color(0xFFF3C75A);
+  static const Color goldDark = Color(0xFF704500);
+  static const Color deepBlack = Color(0xFFFFFBF2);
+  static const Color richBlack = Color(0xFFFFF5DE);
+  static const Color cardBlack = Color(0xFFFFFFFF);
+  static const Color surfaceBlack = Color(0xFFFFF8E8);
+  static const Color ivory = Color(0xFF2B2113);
+  static const Color ivoryDark = Color(0xFF493719);
+  static const Color textSecondary = Color(0xFF77664B);
   static const Color success = Color(0xFF10B981); // Emerald Success Green
   static const Color danger = Color(0xFFEF4444); // Rose Danger Red
   static const Color warning = Color(0xFFF59E0B); // Amber Warning Orange
   static const Color info = Color(0xFF3B82F6); // Bright Info Blue
 
   static LinearGradient get goldGradient => const LinearGradient(
-    colors: [
-      Color(0xFF00BDD6),
-      Color(0xFF0D4863),
-    ], // Cyan to Dark Teal Gradient
+    colors: [Color(0xFFB77900), Color(0xFF704500)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static LinearGradient get darkGradient => const LinearGradient(
-    colors: [Color(0xFFF1F5F9), Color(0xFFF8FAFC)],
+    colors: [Color(0xFFFFF5DE), Color(0xFFFFFBF2)],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
 
   static LinearGradient get cardGradient => const LinearGradient(
-    colors: [Color(0xFFFFFFFF), Color(0xFFF8FAFC)],
+    colors: [Color(0xFFFFFFFF), Color(0xFFFFFBF2)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static BoxDecoration get goldCard => BoxDecoration(
     gradient: const LinearGradient(
-      colors: [Color(0xFF00BDD6), Color(0xFF00ACC1), Color(0xFF0D4863)],
+      colors: [Color(0xFFB77900), Color(0xFF9A6200), Color(0xFF704500)],
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
     ),

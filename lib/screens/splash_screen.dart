@@ -220,7 +220,7 @@ class _SplashScreenState extends State<SplashScreen>
               height: 196,
               child: ClipOval(
                 child: Image.asset(
-                  'assets/images/logo 2.png',
+                  'assets/images/Hrms.png',
                   fit: BoxFit.contain,
                   color: AppTheme.deepBlack,
                   colorBlendMode: BlendMode.multiply,
